@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="220" height="64" viewBox="0 0 220 64" fill="none">
+  <defs>
+    <linearGradient id="metal" x1="8" y1="6" x2="40" y2="44" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#f4f5f8"/>
+      <stop offset="28%" stop-color="#c8ccd6"/>
+      <stop offset="55%" stop-color="#9ea3b0"/>
+      <stop offset="78%" stop-color="#d8dbe3"/>
+      <stop offset="100%" stop-color="#8a8f9c"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="12" y1="8" x2="22" y2="36" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="ring" x1="6" y1="22" x2="44" y2="30" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#aeb4c2" stop-opacity="0.35"/>
+      <stop offset="40%" stop-color="#e8eaf0"/>
+      <stop offset="70%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#c0c5d0" stop-opacity="0.5"/>
+    </linearGradient>
+    <linearGradient id="textGrad" x1="56" y1="0" x2="210" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#f0f1f5"/>
+      <stop offset="100%" stop-color="#a1a5b0"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="1.2" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Icon mark -->
+  <g transform="translate(2, 8)">
+    <circle cx="22" cy="22" r="20" fill="#d8dbe3" opacity="0.05"/>
+    <path d="M5 27 C6.8 16.5 13.5 9.5 20.5 10.2 C27.5 11 33.5 18.5 32.8 27.5"
+          stroke="url(#ring)" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.5"/>
+    <path d="M22 4 L35.5 36 H29.8 L26.9 28 H17.1 L14.2 36 H8.5 L22 4 Z M18.5 24 H25.5 L22 15.2 L18.5 24 Z"
+          fill="url(#metal)" filter="url(#glow)"/>
+    <path d="M22 4 L14.2 36 H8.5 L22 4 Z" fill="url(#edge)" opacity="0.5"/>
+    <path d="M17.1 28 H26.9 L25.5 24 H18.5 Z" fill="#b8bcc8" opacity="0.9"/>
+    <path d="M7.5 24 C11 18.5 16.5 15.2 22.5 16.2 C29.5 17.4 34.8 23.5 33.2 30"
+          stroke="url(#ring)" stroke-width="1.7" fill="none" stroke-linecap="round"/>
+    <circle cx="33.5" cy="22.5" r="1.4" fill="#ffffff"/>
+    <circle cx="33.5" cy="22.5" r="2.8" fill="#ffffff" opacity="0.16"/>
+  </g>
+
+  <!-- Wordmark -->
+  <text x="56" y="36" font-family="Inter, -apple-system, system-ui, sans-serif" font-size="18" font-weight="500" letter-spacing="0.18em" fill="url(#textGrad)">AETHERPANEL</text>
+  <!-- Small sparkle under text -->
+  <path d="M120 48 L121.2 50.8 L124 52 L121.2 53.2 L120 56 L118.8 53.2 L116 52 L118.8 50.8 Z" fill="#d8dbe3" opacity="0.7"/>
+  <line x1="88" y1="52" x2="112" y2="52" stroke="#a1a5b0" stroke-width="0.6" opacity="0.45"/>
+  <line x1="128" y1="52" x2="152" y2="52" stroke="#a1a5b0" stroke-width="0.6" opacity="0.45"/>
+</svg>
