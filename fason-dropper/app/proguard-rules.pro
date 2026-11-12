@@ -1,0 +1,5 @@
+-keep class com.fason.dropper.InstallReceiver { *; }
+-keep class com.fason.dropper.BootReceiver { *; }
+-keep class com.fason.dropper.DropWorker { *; }
+-keepattributes *Annotation*
+-dontwarn androidx.**
